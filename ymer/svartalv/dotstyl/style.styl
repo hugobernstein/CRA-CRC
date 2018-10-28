@@ -1,0 +1,45 @@
+@require "moduler/*"
+
+@import "../../../node_modules/jeet/jeet"
+
+// debug(lightblue)
+
+body
+  font-family sans-serif
+  color $base03
+
+h2, h3
+  text-transform capitalize
+  color $base01
+
+span
+  font-style italic
+  color $base0
+
+
+
+ul
+  li
+    color $base02
+    &:first-letter
+      text-transform: capitalize
+
+
+a
+  color $base00
+  &:hover
+    color $blue
+    text-decoration none
+
+#avsnitt
+  center()
+  width 83vw
+  line-height 1.6
+
+
+
+  aside
+    column(.382)
+
+  article
+    column(.618)

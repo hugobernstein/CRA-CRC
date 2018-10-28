@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  color: #002b36;
+}
+h2,
+h3 {
+  text-transform: capitalize;
+  color: #586e75;
+}
+span {
+  font-style: italic;
+  color: #839496;
+}
+ul li {
+  color: #073642;
+}
+ul li:first-letter {
+  text-transform: capitalize;
+}
+a {
+  color: #657b83;
+}
+a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+#avsnitt {
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 83vw;
+  line-height: 1.6;
+}
+#avsnitt::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#avsnitt aside {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 36.346000000000004%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+#avsnitt aside::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#avsnitt aside:last-child {
+  margin-right: 0%;
+}
+#avsnitt article {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 60.653999999999996%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+#avsnitt article::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#avsnitt article:last-child {
+  margin-right: 0%;
+}
