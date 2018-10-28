@@ -5,7 +5,7 @@
     <title>HugosUtopi</title>
     <link rel="stylesheet" href="yggdrasil/svartalv/css/style.css">
   </head>
-  <body class="sketch__pattern">
+  <body>
     <header>
       <div class="navbar__trans">
         <ul class="nav__trans">
@@ -19,7 +19,7 @@
           <li class="item__trans"><a href="artiklar.ptree"><i class="fa fa-tree" aria-hidden="true"></i></a></li>
         </ul>
         <div class="logo__trans"><img src="yggdrasil/svartalv/bilder/logor/logo-Fjaril.png"></div>
-        
+
       </div>
     </header>
 

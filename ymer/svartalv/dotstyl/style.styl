@@ -4,6 +4,10 @@
 
 // debug(lightblue)
 
+*
+  margin: 0
+  padding: 0
+
 body
   font-family sans-serif
   color $base03
@@ -19,6 +23,7 @@ span
 
 
 ul
+  margin 1.618rem 0
   li
     color $base02
     &:first-letter
@@ -39,19 +44,21 @@ a
     text-decoration none
 
 #avsnitt
-  margin-top: 1.618rem
+  // margin-top: 1.618rem
   clearfix()
   center()
   width 83vw
   line-height 1.6
-
+  padding: 1.618rem
 
 
   aside
+
     column(.382)
 
   article
     column(.618)
+    text-align: justify
 
 .sketch__pattern
   background-image repeating-linear-gradient(-45deg, rgba($base1, .08), rgba($base1, .08) 1px, transparent 1px, transparent 10px)
@@ -64,6 +71,7 @@ a
 .navbar__trans
   position: relative;
   height: 1.618rem * 3
+  // background-color: $ikeayellow
 
   .nav__trans
     margin: 0
@@ -79,7 +87,7 @@ a
       padding: 5px;
       font-weight: 300;
       line-height: 80px;
-      margin-right: 20px;
+      // margin-right: 20px;
       transition: 0.5s ease;
 
 .logo__trans
@@ -87,8 +95,8 @@ a
   display: inline-block;
   margin-top: .618rem;
   margin-left: .618rem;
-  width: 1.618rem*2.5;
-  height: 1.618rem*2.5;
+  width: 1.618rem*3;
+  height: 1.618rem*3;
   transition: 0.5s ease;
 
   img
