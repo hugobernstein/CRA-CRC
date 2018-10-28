@@ -2,11 +2,20 @@ const gulp = require('gulp'),
       stylus = require('gulp-stylus');
 
 const paths = {
+  bilder: {
+    src: 'ymer/svartalv/bilder/**/*',
+    dest: 'yggdrasil/svartalv/bilder'
+  },
   dotstyl: {
     src: 'ymer/svartalv/dotstyl/*.styl',
     dest: 'yggdrasil/svartalv/css'
   }
 }
+
+gulp.task('bilder', function() {
+  return gulp.src(paths.bilder.src)
+    .pipe(gulp.dest(paths.bilder.dest));
+});
 
 gulp.task('formge', function () {
   return gulp.src(paths.dotstyl.src)

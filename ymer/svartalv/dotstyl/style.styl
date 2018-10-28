@@ -24,6 +24,13 @@ ul
     &:first-letter
       text-transform: capitalize
 
+ol
+  &.hebrew
+    list-style-type: hebrew
+  &.greek
+    list-style-type: lower-greek
+  &.cjk
+    list-style-type: cjk-ideographic
 
 a
   color $base00
@@ -32,6 +39,8 @@ a
     text-decoration none
 
 #avsnitt
+  margin-top: 1.618rem
+  clearfix()
   center()
   width 83vw
   line-height 1.6
@@ -43,3 +52,48 @@ a
 
   article
     column(.618)
+
+.sketch__pattern
+  background-image repeating-linear-gradient(-45deg, rgba($base1, .08), rgba($base1, .08) 1px, transparent 1px, transparent 10px)
+  background-size: 56px 56px
+
+.sketch__pattern-v
+  background-image repeating-linear-gradient(45deg, rgba($base2, .1), rgba($base2, .1) 1px, transparent 1px, transparent 10px)
+  background-size: 56px 56px
+
+.navbar__trans
+  position: relative;
+  height: 1.618rem * 3
+
+  .nav__trans
+    margin: 0
+    padding: 0
+    display: inline-block;
+    float: right;
+    margin-right: 5%
+
+    .item__trans
+      list-style: none;
+      display: inline-block;
+      font-size: 18px;
+      padding: 5px;
+      font-weight: 300;
+      line-height: 80px;
+      margin-right: 20px;
+      transition: 0.5s ease;
+
+.logo__trans
+  float: left;
+  display: inline-block;
+  margin-top: .618rem;
+  margin-left: .618rem;
+  width: 1.618rem*2.5;
+  height: 1.618rem*2.5;
+  transition: 0.5s ease;
+
+  img
+    width: 100%;
+
+.title__logo__trans
+  img
+    height: 1.618rem*1.618;

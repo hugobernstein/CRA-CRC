@@ -17,6 +17,15 @@ ul li {
 ul li:first-letter {
   text-transform: capitalize;
 }
+ol.hebrew {
+  list-style-type: hebrew;
+}
+ol.greek {
+  list-style-type: lower-greek;
+}
+ol.cjk {
+  list-style-type: cjk-ideographic;
+}
 a {
   color: #657b83;
 }
@@ -25,6 +34,7 @@ a:hover {
   text-decoration: none;
 }
 #avsnitt {
+  margin-top: 1.618rem;
   width: auto;
   max-width: 1440px;
   float: none;
@@ -35,6 +45,11 @@ a:hover {
   padding-right: 0;
   width: 83vw;
   line-height: 1.6;
+}
+#avsnitt::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 #avsnitt::after {
   content: '';
@@ -72,4 +87,48 @@ a:hover {
 }
 #avsnitt article:last-child {
   margin-right: 0%;
+}
+.sketch__pattern {
+  background-image: repeating-linear-gradient(-45deg, rgba(147,161,161,0.08), rgba(147,161,161,0.08) 1px, transparent 1px, transparent 10px);
+  background-size: 56px 56px;
+}
+.sketch__pattern-v {
+  background-image: repeating-linear-gradient(45deg, rgba(238,232,213,0.1), rgba(238,232,213,0.1) 1px, transparent 1px, transparent 10px);
+  background-size: 56px 56px;
+}
+.navbar__trans {
+  position: relative;
+  height: 4.854rem;
+}
+.navbar__trans .nav__trans {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+.navbar__trans .nav__trans .item__trans {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+}
+.logo__trans {
+  float: left;
+  display: inline-block;
+  margin-top: 0.618rem;
+  margin-left: 0.618rem;
+  width: 4.045rem;
+  height: 4.045rem;
+  transition: 0.5s ease;
+}
+.logo__trans img {
+  width: 100%;
+}
+.title__logo__trans img {
+  height: 2.617924rem;
 }
