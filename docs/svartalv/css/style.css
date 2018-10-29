@@ -10,6 +10,7 @@ h2,
 h3 {
   text-transform: capitalize;
   color: #586e75;
+  margin-top: 0.618rem;
 }
 span {
   font-style: italic;
@@ -64,10 +65,11 @@ a:hover {
   clear: both;
 }
 #avsnitt aside {
+  font-size: 0.618rem;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 36.346000000000004%;
+  width: 31.33333333333333%;
   margin-left: 0%;
   margin-right: 3%;
 }
@@ -79,11 +81,18 @@ a:hover {
 #avsnitt aside:last-child {
   margin-right: 0%;
 }
+#avsnitt aside h3 {
+  font-size: 1rem;
+  font-style: italic;
+}
+#avsnitt aside a:hover {
+  font-size: 1rem;
+}
 #avsnitt article {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 60.653999999999996%;
+  width: 65.66666666666666%;
   margin-left: 0%;
   margin-right: 3%;
   text-align: justify;
