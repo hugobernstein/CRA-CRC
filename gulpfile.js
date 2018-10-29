@@ -35,6 +35,7 @@ gulp.task('hemsidan', function() {
 
 gulp.task('watch', function () {
   gulp.watch(paths.dotstyl.src, gulp.series('formge'));
+  gulp.watch(paths.index.src, gulp.series('hemsidan'));
 });
 
-gulp.task('default', gulp.series('formge', 'hemsidan', 'watch'));
+gulp.task('default', gulp.series('bilder', 'formge', 'hemsidan', 'watch'));
