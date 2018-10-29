@@ -2,13 +2,17 @@ const gulp = require('gulp'),
       stylus = require('gulp-stylus');
 
 const paths = {
+  index: {
+    src: 'ymer/index.html',
+    dest: 'docs'
+  },
   bilder: {
     src: 'ymer/svartalv/bilder/**/*',
-    dest: 'yggdrasil/svartalv/bilder'
+    dest: 'docs/svartalv/bilder'
   },
   dotstyl: {
     src: 'ymer/svartalv/dotstyl/*.styl',
-    dest: 'yggdrasil/svartalv/css'
+    dest: 'docs/svartalv/css'
   }
 }
 
@@ -20,11 +24,17 @@ gulp.task('bilder', function() {
 gulp.task('formge', function () {
   return gulp.src(paths.dotstyl.src)
     .pipe(stylus())
-    .pipe(gulp.dest(paths.dotstyl.dest));
+    .pipe(gulp.dest(paths.dotstyl.dest))
+    .pipe(gulp.dest('ymer/svartalv/css'));
+});
+
+gulp.task('hemsidan', function() {
+  return gulp.src(paths.index.src)
+    .pipe(gulp.dest(paths.index.dest));
 });
 
 gulp.task('watch', function () {
   gulp.watch(paths.dotstyl.src, gulp.series('formge'));
 });
 
-gulp.task('default', gulp.series('formge', 'watch'));
+gulp.task('default', gulp.series('formge', 'hemsidan', 'watch'));
